@@ -1,0 +1,5 @@
+<label for="myfile">Select a file:</label>
+<input type="file" id="myfile" name="myfile" (change)="onChange($event)">
+<mat-nav-list>
+  <mat-list-item *ngFor="let file of files">{{ file }}</mat-list-item>
+</mat-nav-list>
